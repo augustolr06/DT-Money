@@ -1,12 +1,14 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from './styles/global'
+import { Transations } from './pages/Transations/Transations'
+import { GlobalStyle } from './styles/global'
+import { defaultTheme } from './styles/themes/default'
 
 export function App() {
-
   return (
     <ThemeProvider theme={defaultTheme}>
-      <h1>Hello World</h1>
-      </ThemeProvider>
+      <GlobalStyle />
+      <Transations />
+    </ThemeProvider>
   )
 }
